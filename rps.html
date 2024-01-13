@@ -1,0 +1,110 @@
+g<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper scissor</title>
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+        }
+        .hder{
+            color: azure;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5rem;
+            border: 2px solid teal;
+            border-radius:5%;
+        }
+        .opt{
+            height:150px;
+            width: 150px;
+            border-radius:50%; 
+        }
+        img{
+            height: 150px;
+            border-radius:50%;
+            width: 150px;
+            object-fit: cover;
+        }
+        #options{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 5rem;
+        }
+        .opt:hover{
+            border: 5px solid black;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .scores{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 5rem;
+          font-size: 2rem;
+          gap: 2rem;
+        }
+        #us,#cs{
+            text-align: center;
+            font-size: 5rem;
+        }
+        .result{
+            margin-top: 3rem;
+            display: flex;
+           align-items: center;
+            justify-content: center; 
+            font-size: 5rem;
+        }
+        #msg{
+            padding: 1rem;
+            border-radius: 10px;
+            width: fit-content;
+            background-color: blueviolet;
+        }
+        body{
+           background-color: aqua;
+    }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hder">
+            <h1>Rock Paper scissor</h1>
+        </div>
+        <main>
+            <div id="options">
+                <div id="rock" class="opt">
+                    <img src="https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/rock.png?raw=true">
+                </div>
+                <div id="paper" class="opt">
+                    <img src="https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/paper.png?raw=true">
+                </div>
+                <div id="scissor" class="opt">
+                    <img src="https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/scissors.png?raw=true">
+                </div>
+            </div>
+            <div class="scores">
+                <div class="you">
+                    <p id="us">0</p>
+                    <p>User</p>
+                </div>
+                <div class="comp">
+                    <p id="cs">0</p>
+                    <p>Computer</p>
+                </div>
+            </div>
+            <div class="result">
+                   <p id="msg">Select an Option</p>
+            </div>
+        </main>
+    </header>
+    <script src="rps.js"></script>
+</body>
+</html>
